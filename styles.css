@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cabin, Arial, sans-serif;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsla(16, 38%, 41%, 1);
+    color: hsla(0, 0%, 93%, 1);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsla(17, 39%, 33%, 1);
+}
+
+ul {
+    padding-left: 0;
+}
+
+i {
+    color: hsla(16, 38%, 41%, 1);
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+    color: hsla(208, 16%, 21%, 1);
+}
+
+header h2 {
+    margin-bottom: 0;
+}
+
+header {
+    background-image: url('img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+@media only screen and (max-width: 616px) {
+    header {
+        padding-bottom: 80px;
+    }
+}
+
+.top-bar {
+    background-color: hsla(0, 0%, 93%, 0.6);
+    color: hsla(0, 0%, 15%, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+}
+
+@media only screen and (min-width: 617px) {
+    .top-bar {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 616px) {
+    .top-bar {
+        justify-content: center;
+    }
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: hsla(0, 0%, 15%, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto 10px;
+}
+
+nav ul li a:hover {
+    color: hsla(16, 38%, 41%, 1);
+}
+
+nav ul li a:active {
+    font-weight: 700;
+    color: hsla(16, 38%, 41%, 1);
+}
+
+.hero {
+    padding: 80px 80px 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 616px) {
+    .hero {
+        align-items: flex-end;
+    }
+}
+
+.info {
+    width: 50%;
+}
+
+@media only screen and (max-width: 616px) {
+    .info {
+        width: 100%;
+    }
+}
+
+section {
+    padding: 10px 50px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: hsla(208, 16%, 21%, 1);
+}
+
+header .title {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 616px) {
+    section {
+        padding: 50px 50px;
+    }
+}
+
+#team,
+#services {
+    background-color: hsla(0, 0%, 96%, 0.6);
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#team {
+    background-color: white;
+}
+
+/* #services {
+    border-bottom: 1px solid hsla(209, 16%, 35%, 1);
+} */
+
+.our-team,
+.our-services {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service {
+    flex: 0 0 300px;
+}
+
+@media only screen and (max-width: 1329px) {
+    .service {
+        flex: 0 0 400px;
+    }
+}
+
+.team-member img {
+    height: 200px;
+    border-radius: 100%;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+.team-member h4 {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: hsla(208, 16%, 21%, 1);
+    color: hsla(0, 0%, 93%, 1);
+    padding: 10px;
+    text-align: center;
+}
+
+footer h3,
+footer h5 {
+    color: hsla(0, 0%, 93%, 1);
+}
+
+footer h6 {
+    color: hsla(209, 16%, 35%, 1);
+}
+
+.address {
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+footer nav {
+    margin-top: 30px;
+}
+
+footer nav ul li a {
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 93%, 1);
+}
+
+hr {
+    border: 1px solid hsla(209, 16%, 35%, 1);
+
+}
